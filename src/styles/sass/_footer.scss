@@ -1,0 +1,45 @@
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* --- --- -- ABOUT-ME -- --- --- */
+
+#about-me {
+  height: 80px;
+  background-color: #f8faff;
+  font-family: "Poppins", sans-serif;
+  color: $color-grey;
+  font-size: 13px;
+}
+
+.container--footer {
+  width: 80%;
+  align-self: center;
+  height: 50px;
+  border-top: dashed 1.5px $color-grey;
+  border-bottom: dashed 1.5px $color-grey;
+  @extend %flex;
+  justify-content: space-between;
+}
+
+#heart {
+  color: $color-red;
+}
+
+.social {
+  @extend %flex;
+  justify-content: space-around;
+  width: 180px;
+  a {
+    color: $color-grey;
+    font-size: 20px;
+  }
+  a:hover {
+    border-bottom: solid 2px $color-grey;
+  }
+}
+
+#icons {
+  margin-left: 5px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
