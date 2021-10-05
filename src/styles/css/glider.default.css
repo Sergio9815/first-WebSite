@@ -87,3 +87,21 @@
 .carousel__dots .glider-dot.active {
   opacity: 1;
 }
+
+.footer-decoration {
+  height: 54px;
+  margin-top: 0px;
+  background: linear-gradient(
+    to bottom right,
+    transparent 50%,
+    #7eca9c 51%
+  );
+}
+
+/* --- --- -- RESPONSIVE DESIGN -- --- --- */
+@media only screen and (max-width: 500px) {
+  .footer-decoration {
+    display: none;
+    background-color: transparent;
+  }
+}
