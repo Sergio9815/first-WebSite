@@ -146,7 +146,7 @@ header {
 }
 
 .contenedor-imagen {
-  height: 100vh;
+  height: 92vh;
 }
 
 .contenedor-imagen img {
@@ -304,7 +304,8 @@ header {
 
   .second--title {
     font-size: 25px;
-    margin-top: -80px;
+    margin-top: -20px;
+    margin-bottom: 35px;
   }
 
   #second-beach {
@@ -339,13 +340,17 @@ header {
 }
 /* ------------------------------------------------------------------------------------------------ */
 @media screen and (max-width: 910px) {
+  #playas {
+    margin-top: 3px;
+  }
+
   .container h3 {
     font-size: 25px;
     padding: 0;
   }
 
   .main__paragraph {
-    width: 80%;
+    width: 90%;
     margin-bottom: 20px;
   }
 
@@ -367,7 +372,7 @@ header {
   }
 
   #sites-paragraph {
-    width: 80%;
+    width: 90%;
   }
 
   .main--content {
@@ -390,6 +395,15 @@ header {
 
   .options {
     display: flex;
+  }
+
+  .contenedor-imagen {
+    display: none;
+  }
+
+  #playas {
+    margin-top: 50px;
+    margin-bottom: -50px;
   }
 
   .container h3 {

@@ -10,7 +10,7 @@
 }
 
 .contenedor-imagen {
-	height: 100vh;
+	height: 92vh;
 }
 
 .contenedor-imagen img {
@@ -182,7 +182,8 @@
 
   .second--title {
     font-size: 25px;
-    margin-top: -80px;
+    margin-top: -20px;
+    margin-bottom: 35px;
   }
 
   #second-beach {
@@ -224,6 +225,10 @@
 /* ------------------------------------------------------------------------------------------------ */
 
 @media screen and (max-width: 910px) {
+  #playas {
+    margin-top: 3px;
+}
+
   .container {
     h3 {
       font-size: 25px;
@@ -232,7 +237,7 @@
   }
 
   .main__paragraph {
-    width: 80%;
+    width: 90%;
     margin-bottom: 20px;
   }
   
@@ -254,7 +259,7 @@
   }
 
   #sites-paragraph {
-    width: 80%;
+    width: 90%;
   }
 
   .main--content {
@@ -280,6 +285,15 @@
     display: flex;
   }
   
+  .contenedor-imagen {
+    display: none;
+  }
+
+  #playas {
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
   .container h3 {
     font-size: 30px;
   }
