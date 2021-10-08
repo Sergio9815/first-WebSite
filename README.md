@@ -1,8 +1,9 @@
 # My-first-Website 🌐
 
+![preview](https://user-images.githubusercontent.com/37419848/136623778-9aaeabaf-9dbd-4ddd-9221-911ab93b2be8.png)
+
 Site link
 ------------------------------------------------------------------------------------------------
 
 Disponible en: https://first-web-site.vercel.app/
 
-![Screenshot (36)](https://user-images.githubusercontent.com/37419848/116169894-4e782280-a6cb-11eb-8aae-b33bd2d48ac3.png)
