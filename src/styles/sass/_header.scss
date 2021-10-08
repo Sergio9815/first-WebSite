@@ -9,11 +9,10 @@ header {
   background-color: $color-white;
   position: fixed;
   width: 100%;
-  @extend %shadow;
 }
 
 .section--on {
-  border-bottom: solid 2px $color-light-rose;
+  border-bottom: solid 2px $color-green;
   transition: .1s ease all;
 }
 
@@ -23,24 +22,17 @@ header {
 
 .container {
   width: 90%;
-  height: 80px;
+  height: 60px;
   @extend %flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0;
   overflow: hidden;
   h3 {
     color: $color-green;
-    font-size: 40px;
+    font-size: 35px;
   }
-
-  ul {
-    list-style: none;
-    padding-right: 50px;
-    li {
-      float: left;
-      padding-left: 20px;
       a {
-        color: $color-light-rose;
+        color: $color-green;
         text-decoration: none;
         letter-spacing: 2px;
         text-transform: uppercase;
@@ -48,12 +40,17 @@ header {
         font-size: 15px;
       }
       a:hover {
-        border-bottom: solid 2px $color-light-rose;
+        border-bottom: solid 2px $color-green;
       }
-    }
-  }
 }
 
+.container--menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
 
 #btn-about {
   border: solid 2px $color-green;

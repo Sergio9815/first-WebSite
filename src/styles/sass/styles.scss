@@ -5,42 +5,19 @@
 
 /* ------------------------------------------------------------------------------------------------ */
 
-/* --- --- -- MAIN ARTICLE -- --- --- */
-
-.main {
-  @extend %flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 50px;
+.options {
+  display: none;
 }
+
+/* --- --- -- BEACH SECTION -- --- --- */
 
 .main--title {
   color: $color-blue-dark;
   font-size: 35px;
   padding: 65px;
   margin-top: 15px;
+  margin-left: 100px;
   font-family: "Fira Sans", sans-serif;
-}
-
-.container__main {
-  a {
-    @extend %flex;
-    justify-content: center;
-    margin-top: 50px;
-  }
-
-  img {
-    object-fit: cover;
-    width: 400px;
-    height: 500px;
-    border-radius: 10px;
-    /* transform: rotate(-1deg); */
-  }
-}
-
-#Panama {
-  padding: 0;
-  font-size: 60px;
 }
 
 .main__paragraph {
@@ -53,10 +30,6 @@
   width: 400px;
 }
 
-/* ------------------------------------------------------------------------------------------------ */
-
-/* --- --- -- ANIMALS SECTION -- --- --- */
-
 .section__container {
   overflow: hidden;
   display: flex;
@@ -66,43 +39,6 @@
   width: 100%;
   background-color: $color-blue-sky;
 }
-
-.section--animals {
-  @extend %flex;
-  align-self: center;
-  width: 90%;
-  justify-content: space-around;
-  /* background-color: #7eca9c; */
-  margin-bottom: 100px;
-  margin-top: 50px;
-  img {
-    width: 235px;
-    height: 250px;
-    object-fit: cover;
-  }
-}
-
-.section__content--item {
-  @extend %flex;
-  flex-direction: column;
-  border-radius: 2px;
-  padding-top: 22px;
-  background-color: $color-white;
-  width: 270px;
-  height: 310px;
-  @extend %shadow;
-}
-
-.animals-desc {
-  color: $color-orange;
-  font-size: 20px;
-  padding: 15px;
-  font-weight: bold;
-}
-
-/* ------------------------------------------------------------------------------------------------ */
-
-/* --- --- -- BEACH SECTION -- --- --- */
 
 #beach {
   background-color: $color-white;
@@ -119,8 +55,11 @@
 }
 
 #playas {
-  color: $color-light-rose;
-  text-decoration: underline $color-light-rose;
+  margin-top: 70px;
+  margin-left: 150px;
+  margin-bottom: -50px;
+  color: $color-blue-dark;
+  text-decoration: underline $color-blue-dark;
 }
 
 .second--title {
@@ -192,53 +131,21 @@
 /* --- --- -- RESPONSIVE DESIGN -- --- --- */
 
 @media screen and (max-width: 1220px) {
-  .container {
-    flex-direction: column;
-    justify-content: space-around;
-    h3 {
-      font-size: 28px;
-      padding: 0;
-    }
-    ul {
-      li {
-        a {
-          font-size: 14px;
-        }
-      }
-    }
-  }
-
-  /* --- --- --- --- --- --- ---  */
-
-  .main {
-    flex-direction: column-reverse;
-    padding: 10px;
-  }
 
   .main--title {
     font-size: 35px;
     margin-top: 30px;
+    margin-left: 0;
+    margin: 0;
   }
 
-  #Panama {
-    align-self: center;
-    margin-top: 60px;
-  }
+  #playas {
+    margin-left: 0;
+    margin-bottom: 0;
+}
 
   .main__paragraph {
     margin-top: 50px;
-  }
-
-  .container__main {
-    a {
-      margin-top: 10px;
-    }
-    img {
-      width: 550px;
-      height: 300px;
-      border-radius: 20px;
-      margin-bottom: 50px;
-    }
   }
 
   .main__paragraph {
@@ -252,12 +159,6 @@
     align-items: center;
   }
 
-  .section--animals {
-    flex-wrap: wrap;
-    margin-bottom: 100px;
-    margin-top: 2px;
-    gap: 50px;
-  }
 
   /* --- --- --- --- --- --- ---  */
 
@@ -310,39 +211,19 @@
 
 /* ------------------------------------------------------------------------------------------------ */
 
-@media screen and (max-width: 870px) {
-  .container--menu {
-    display: none;
-  }
-
+@media screen and (max-width: 910px) {
   .container {
     h3 {
-      font-size: 35px;
+      font-size: 25px;
       padding: 0;
     }
   }
-
-  .container__main {
-    img {
-      width: 80%;
-      height: 200px;
-      border-radius: 20px;
-    }
-  }
-
-  /* --- --- --- --- --- --- ---  */
 
   .main__paragraph {
     width: 80%;
     margin-bottom: 20px;
   }
-
-  #Panama {
-    font-size: 35px;
-  }
-
-  /* --- --- --- --- --- --- ---  */
-
+  
   .section__image {
     background-color: transparent;
     width: 90%;
@@ -355,8 +236,6 @@
       border-radius: 10px;
     }
   }
-
-  /* --- --- --- --- --- --- ---  */
 
   .section-sites {
     width: 100%;
@@ -380,7 +259,23 @@
   }
 }
 
-/* ------------------------------------------------------------------------------------------------ */
+@media screen and (max-width: 810px) {
+  .bt {
+    display: none;
+  }
+
+  .options {
+    display: flex;
+  }
+  
+  .container h3 {
+    font-size: 30px;
+  }
+
+.container--menu {
+  justify-content: space-between;
+}
+}
 
 @media screen and (max-width: 620px) {
   .container--footer {
@@ -402,5 +297,3 @@
     margin-top: 30px;
   }
 }
-
-/* ------------------------------------------------------------------------------------------------ */
