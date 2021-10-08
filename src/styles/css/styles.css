@@ -16,7 +16,7 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
-.main--content, .section-sites, .section__image, .section--beach, .main__paragraph, .social, .container--footer, .container, header {
+.main--content, .section-sites, .section__image, .section--beach, .main__paragraph, .social-main, .social, .container--footer, .container, .header-b, header {
   display: flex;
   align-items: center;
 }
@@ -41,13 +41,26 @@ body {
 /* --- --- -- HEADER -- --- --- */
 header {
   justify-content: center;
-  background-color: #ffffff;
   position: fixed;
   width: 100%;
 }
 
+.header-b {
+  justify-content: center;
+  background-color: #181717;
+  position: fixed;
+  width: 100%;
+  transition: 1s;
+  justify-content: center;
+  background: rgba(241, 241, 241, 0.884);
+  box-shadow: 0 8px 32px 0 rgba(187, 187, 187, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 .section--on {
-  border-bottom: solid 2px #7eca9c;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.322);
   transition: 0.1s ease all;
 }
 
@@ -58,45 +71,33 @@ header {
 .container {
   width: 90%;
   height: 60px;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 0;
   overflow: hidden;
 }
 .container h3 {
-  color: #7eca9c;
+  color: #ffffff;
   font-size: 35px;
 }
 .container a {
-  color: #7eca9c;
+  color: #29252e;
   text-decoration: none;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
+  transition: 0.2s;
 }
 .container a:hover {
-  border-bottom: solid 2px #7eca9c;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.322);
 }
 
 .container--menu {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 50px;
-}
-
-#btn-about {
-  border: solid 2px #7eca9c;
-  color: #7eca9c;
-  border-radius: 5px;
-  padding: 2px 32px;
-}
-
-#btn-about:hover {
-  background-color: #7eca9c;
-  text-decoration: none;
-  color: #ffffff;
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -117,10 +118,6 @@ header {
   border-top: dashed 1.5px #bbbbbb;
   border-bottom: dashed 1.5px #bbbbbb;
   justify-content: space-between;
-}
-
-#heart {
-  color: #f25287;
 }
 
 .social {
@@ -146,17 +143,71 @@ header {
 }
 
 .contenedor-imagen {
-  height: 92vh;
-}
-
-.contenedor-imagen img {
+  background-image: url(../../assets/fondo.jpg);
   width: 100%;
-  height: 100%;
-  vertical-align: top;
-  object-fit: cover;
-  object-position: 0 bottom;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }
 
+.main {
+  height: 90vh;
+  width: 485px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#main-subTitle {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.322);
+  align-self: center;
+}
+
+#title {
+  font-size: 100px;
+  color: rgba(0, 0, 0, 0.658);
+}
+
+.social-main {
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+.social-main a {
+  color: #ffffff93;
+  font-size: 20px;
+}
+.social-main a:hover {
+  color: #ffffff;
+}
+
+#btn-disc {
+  letter-spacing: 2px;
+  border: solid 2px #ffffff93;
+  color: #ffffff93;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 15px 32px;
+  text-decoration: none;
+  align-self: center;
+  margin-right: 30px;
+}
+
+#btn-disc:hover {
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #29252e;
+  transition: 1s;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
 /* --- --- -- BEACH SECTION -- --- --- */
 .main--title {
   color: #415a77;
@@ -164,6 +215,7 @@ header {
   padding: 65px;
   margin-top: 15px;
   margin-left: 100px;
+  text-align: center;
   font-family: "Fira Sans", sans-serif;
 }
 
@@ -388,6 +440,7 @@ header {
     display: none;
   }
 }
+/* ------------------------------------------------------------------------------------------------ */
 @media screen and (max-width: 810px) {
   .bt {
     display: none;
@@ -397,8 +450,14 @@ header {
     display: flex;
   }
 
-  .contenedor-imagen {
-    height: 34vh;
+  .main {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #btn-disc {
+    margin-right: 0px;
   }
 
   #playas {
@@ -422,6 +481,7 @@ header {
     width: 691px;
   }
 }
+/* ------------------------------------------------------------------------------------------------ */
 @media screen and (max-width: 760px) {
   .section__image img {
     width: 600px;
@@ -438,6 +498,7 @@ header {
     width: 516px;
   }
 }
+/* ------------------------------------------------------------------------------------------------ */
 @media screen and (max-width: 560px) {
   .section__image img {
     width: 450px;
@@ -456,6 +517,10 @@ header {
   .main--title {
     font-size: 28px;
     margin-top: 30px;
+  }
+
+  #title {
+    font-size: 80px;
   }
 }
 

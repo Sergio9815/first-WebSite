@@ -10,16 +10,72 @@
 }
 
 .contenedor-imagen {
-	height: 92vh;
+  background-image: url(../../assets/fondo.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.contenedor-imagen img {
-	width: 100%;
-	height: 100%;
-	vertical-align: top;
-	object-fit: cover;
-	object-position: 0 bottom;
+.main {
+  height: 90vh;
+  width: 485px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
 }
+
+#main-subTitle {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.322);
+  align-self: center;
+}
+
+#title {
+  font-size: 100px;
+  color: rgba(0, 0, 0, 0.658);
+}
+
+.social-main {
+  @extend %flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  a {
+    color: #ffffff93;
+    font-size: 20px;
+  }
+  a:hover {
+    color: $color-white;
+  }
+}
+
+#btn-disc {
+  letter-spacing: 2px;
+  border: solid 2px #ffffff93;
+  color: #ffffff93;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 15px 32px;
+  text-decoration: none;
+  align-self: center;
+  margin-right: 30px;
+}
+
+#btn-disc:hover {
+  background-color: $color-white;
+  text-decoration: none;
+  color: $color-dark;
+  transition: 1s;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
 
 /* --- --- -- BEACH SECTION -- --- --- */
 
@@ -29,6 +85,7 @@
   padding: 65px;
   margin-top: 15px;
   margin-left: 100px;
+  text-align: center;
   font-family: "Fira Sans", sans-serif;
 }
 
@@ -276,6 +333,8 @@
   }
 }
 
+/* ------------------------------------------------------------------------------------------------ */
+
 @media screen and (max-width: 810px) {
   .bt {
     display: none;
@@ -285,8 +344,14 @@
     display: flex;
   }
   
-  .contenedor-imagen {
-    height: 34vh;
+  .main {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #btn-disc {
+    margin-right: 0px;
   }
 
   #playas {
@@ -311,6 +376,8 @@
 }
 }
 
+/* ------------------------------------------------------------------------------------------------ */
+
 @media screen and (max-width: 760px) {
   .section__image img {
     width: 600px;
@@ -328,6 +395,8 @@
     width: 516px;
 }
 }
+
+/* ------------------------------------------------------------------------------------------------ */
 
 
 @media screen and (max-width: 560px) {
@@ -353,5 +422,9 @@
   .main--title {
     font-size: 28px;
     margin-top: 30px;
+  }
+
+  #title {
+    font-size: 80px;
   }
 }

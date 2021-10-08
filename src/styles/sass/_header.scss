@@ -6,13 +6,28 @@
 header {
   @extend %flex;
   justify-content: center;
-  background-color: $color-white;
   position: fixed;
   width: 100%;
 }
 
+.header-b {
+    @extend %flex;
+    justify-content: center;
+    background-color: rgb(24, 23, 23);
+    position: fixed;
+    width: 100%;
+    transition: 1s;
+    
+  justify-content: center;
+    background: rgba(241, 241, 241, 0.884);
+    box-shadow: 0 8px 32px 0 rgba(187, 187, 187, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
 .section--on {
-  border-bottom: solid 2px $color-green;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.322);
   transition: .1s ease all;
 }
 
@@ -24,23 +39,24 @@ header {
   width: 90%;
   height: 60px;
   @extend %flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 0;
   overflow: hidden;
   h3 {
-    color: $color-green;
+    color: $color-white;
     font-size: 35px;
   }
       a {
-        color: $color-green;
+        color: $color-dark;
         text-decoration: none;
         letter-spacing: 2px;
         text-transform: uppercase;
         font-family: "Poppins", sans-serif;
         font-size: 15px;
+        transition: .2s;
       }
       a:hover {
-        border-bottom: solid 2px $color-green;
+        border-bottom: solid 2px rgba(0, 0, 0, 0.322);
       }
 }
 
@@ -48,20 +64,8 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 50px;
 }
 
-#btn-about {
-  border: solid 2px $color-green;
-  color: $color-green;
-  border-radius: 5px;
-  padding: 2px 32px;
-}
-
-#btn-about:hover {
-  background-color: $color-green;
-  text-decoration: none;
-  color: $color-white;
-}
 /* ------------------------------------------------------------------------------------------------ */
